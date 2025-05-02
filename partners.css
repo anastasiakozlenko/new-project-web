@@ -1,0 +1,72 @@
+/* Основний фон */
+.partners-section,
+.testimonial-section {
+    background-color: #3949f9;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Контейнер */
+.partners-container,
+.testimonial-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+.partners-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Логотипи партнерів */
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners-logos img {
+    max-height: 40px;
+    object-fit: contain;
+}
+
+/* Відгук */
+.testimonial-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Адаптивність */
+@media (max-width: 800px) {
+    .partners-logos {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .partners-title {
+        font-size: 2rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}

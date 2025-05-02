@@ -1,0 +1,37 @@
+.footer {
+    background-color: #3a4bff;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-top: 1px solid white;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    text-align: left;
+    border-top: 1px solid white;
+    padding-top: 10px;
+  }
+  .social-media img {
+    width: 16px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .presentation-section {
+    padding: 60px 20px;
+    border-top: 3px solid #3949f9;
+    border-bottom: 3px solid #3949f9;
+  }
+  
+  .presentation-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .presentation-title {
+    font-size: 2.8rem;
+    color: #3949f9;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .presentation-subtitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .presentation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    color: #3949f9;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .form-group input {
+    padding: 10px 15px;
+    border: 1px solid #3949f9;
+    border-radius: 999px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .form-group input:focus {
+    box-shadow: 0 0 0 2px #3949f933;
+  }
+  
+  .submit-btn {
+    background-color: #3949f9;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2f3ed8;
+  }
+  
+  .form-message {
+    font-size: 0.8rem;
+    color: #3949f9;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .presentation-title {
+      font-size: 2rem;
+    }
+  }
+  

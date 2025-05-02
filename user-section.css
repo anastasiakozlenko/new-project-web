@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #fff;
+    --transition: all 0.3s ease;
+  }
+  
+  .user-section {
+    background: url('img/bg-user.png') no-repeat center center/cover;
+    position: relative;
+    padding: 200px 0;
+    color: var(--text-color);
+  }
+  
+  .user-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .user-section__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-color);
+  }
+  
+  .user-section__edit-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  

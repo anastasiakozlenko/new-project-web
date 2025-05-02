@@ -1,0 +1,99 @@
+/* Глобальні змінні */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --white: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+/* Базові стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth; /* Плавний скрол */
+}
+
+/* Стилі хедера */
+.header {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.header__logo-link:hover {
+  color: var(--secondary-color);
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header__menu-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+  padding: 5px 0;
+}
+
+.header__menu-link:hover {
+  color: var(--secondary-color);
+}
+
+.header__menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.header__menu-link:hover::after {
+  width: 100%;
+}
+
+/* Стилі для секцій (приклад) */
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#product { background-color: #f5f5f5; }
+#about { background-color: #e9e9e9; }
+#partners { background-color: #f0f0f0; }

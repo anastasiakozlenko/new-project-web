@@ -1,0 +1,64 @@
+.about-section {
+    background-color: var(--white);
+    padding: 0 0;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-main-title {
+    text-align: left;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+/* Контейнер для 3-х колонок */
+.about-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Кожна стаття */
+.about-article {
+    flex: 1 1 30%;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .about-main-title {
+        font-size: 2.2rem;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .about-article {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+}
